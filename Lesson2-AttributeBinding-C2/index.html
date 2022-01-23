@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="style.css">
-<div class="nav-bar">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-bar"></div>
 
     <div id="app">
-        <div class="product">
-                <div class="product-image">
-                    <a :href="link" target="_blank">
-                        <img :src="image" :alt="altText"/>
-                        <!-- OR v-bind:src -->
-                    </a>
-                </div>
-
-                <div class="product-info">
-                    <h1>{{ product }}</h1>
-                </div>
+      <div class="product">
+        <div class="product-image">
+          <a :href="link" target="_blank">
+            <img :src="image" :alt="altText" />
+            <!-- OR v-bind:src -->
+          </a>
         </div>
+
+        <div class="product-info">
+          <h1>{{ product }}</h1>
+        </div>
+      </div>
     </div>
-
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue" ></script>
-<script src="https://unpkg.com/vue"></script>
-<script src="main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
